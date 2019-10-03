@@ -345,7 +345,18 @@ div.member_img{
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+.Sidhya.clicked{
+    background-image: url(img/osama.jpg);
+    background-position: 80%, 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.easter{
+    opacity: 0;
+}
+.easter.clicked{
+    opacity: 1;
+}
 .Navneet{
     background-image: url(img/navneet.jpg);
     background-size: cover;
