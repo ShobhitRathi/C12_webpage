@@ -1,0 +1,258 @@
+.header{
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    transition: .6s;
+    height: 70px;
+    z-index: 242; 
+}
+.header-color{
+    background: rgba(255,255,255,0.8);
+}
+.nav-ele{
+    display: inline-block;
+}
+.left-name{
+    position: relative;
+    top: 8px;
+    left:25px;
+}
+.right-name{
+    position: relative;
+    float: right;
+    font-family: 'Roboto',verdana;
+    font-weight: 300;
+    font-size: 2.2rem;
+    right:20px;
+    top: 10px;
+    border: 2px solid #e67e22;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    transition: .3s;
+    z-index: 1;
+    color: #e67e22;
+}
+.right-name a{
+     color: #e67e22;
+}
+.right-name:after{
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    background: #e67e22;
+    border: none;
+    z-index: -1;
+    transition: .3s;
+    border-radius: 10px;
+
+
+}
+.right-name:hover:after{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+
+}
+
+.right-name:hover a{
+    text-decoration: none;
+    color: white;
+}
+.right-name:hover{
+    border: 2px solid transparent;
+
+}
+.main{
+  padding-top: 80px;
+    position: relative;
+    background-color:#fff;
+    
+}
+.dates{
+  position: relative;
+  top: 30px;
+  font-family: 'Roboto',verdana;
+  font-weight: 300;
+  font-size: 3rem;
+  padding-bottom:  50px;
+}
+.midimg{
+  width: 470px;
+}
+@media screen and (min-width:200px) {
+    .header{
+      height: 80px;
+    }
+    .midimg{
+      width: 370px;
+      height: 600px;
+
+
+      }
+      .main{
+        padding-top: 100px;
+        padding-bottom: 10px;
+      }
+      .logo-header{
+        height: 50px;width: 50px;
+      }
+      .dates{
+        padding-top: 10px;
+        font-size: 3rem;
+      }
+      .buttonz{
+  
+        padding-top: 0px;
+        padding-bottom: 50px;
+        font-family: 'Roboto',verdana;
+        font-weight: 700;
+        font-size:1.7rem;
+        color: orange;
+
+      }
+      .button{
+        padding: 10px;
+        display: inline-block;
+        border: 2px solid orange;
+        margin: 20px;
+        transition: .3s;
+        color: orange;
+      }
+      .button a{
+        color: orange;
+        transition: .3s;
+
+      }
+      .button:hover{
+        background: orange;
+        color: white;
+      }
+      .button:hover a{
+        color: white;
+      }
+      .button a:hover{
+        color: white;
+        text-decoration: none;
+      }
+      .events{
+        background: #d0d0d0;
+        padding-top: 120px;
+        padding-bottom: 50px;
+        font-family: 'Roboto',verdana;
+        font-weight: 300;
+      }
+      .events h1{
+        font-size: 5rem;
+        font-weight: 100;
+        padding-bottom: 60px;
+      }
+      .card-holder{
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        width: 300px;
+        margin: 50px;
+        padding: 60px;
+        background: #fff;
+        position: relative;
+        transition: .3s;
+        display: inline-block;
+      }
+      .card-holder:hover{
+       box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+      }
+      
+      
+     
+      .card-holder img{
+        height: 150px;
+        width: 150px;
+      }
+      .card-holder h2{
+        position: relative;
+        top: 40px;
+        margin-bottom: 40px;
+        font-family: 'Ubuntu',verdana;
+        font-size: 2.2rem;
+        font-weight: 100;
+        color:#34495e;
+        cursor: pointer;
+        
+      
+      }
+      .events a{
+        text-decoration: none;
+        color: #000;
+      }
+     
+      .events a:active{
+        text-decoration: none;
+        color: #000;
+      }
+      .close{
+        position: relative;
+
+      }
+      .close:after{
+        position: absolute;
+        content: "x";
+        background: #e0e0e0;
+        font-family: 'Roboto',verdana;
+        font-size: 4rem;
+
+        top: 0;
+        right: 0;
+
+      }
+      .modal-dialog{
+        width: 95%;
+       padding: 60px;
+       
+       font-size: 3rem;
+       font-family: 'Roboto',verdana;
+       font-weight: 300;
+
+      }
+      .modal-content{
+        position: relative;
+        z-index: 1;
+      }
+      
+      .modal-body{
+        padding: 30px;
+      }
+      .modal-heading{
+        font-size: 4rem;
+        font-weight: 100;
+      }
+      .modal-dialog h3{
+        font-family: 'Roboto',verdana;
+        font-size: 2rem;
+        font-weight: 400;
+        
+      }
+      .modal-dialog p{
+        font-family: 'Raleway',verdana;
+        font-weight: 500;
+        font-size: 1.8rem;
+      }
+      a:focus{
+        outline: none;
+      }
+}
+
+@media screen and (min-width: 600px) {
+  .logo-header{
+    height: 50px;
+    width: 50px;
+  }
+  .main{
+    
+  }
+}

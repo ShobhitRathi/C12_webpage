@@ -1,0 +1,53 @@
+body{
+    padding:0;
+    margin:0;
+}
+nav{
+    height:80px;
+    background:#eaeaea; 
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    margin:0;
+    padding-top:27px;
+    float: right;
+    margin-right: 20px;
+
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a:hover{
+   background: #4dd3eb;
+   padding:30px 10px 30px 10px;
+   transition: 0.4s ease-in;
+}
+nav ul li a{
+    color:#292929;
+    font-size: 20px;
+    padding:10px;
+    text-decoration: none;
+}
+#logo{
+    float: left;
+    padding-top:12px;
+    height: 50px;
+    margin: 0;
+}
+.heading{
+    font-family: 'Dosis', sans-serif;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
+.tagline{
+    font-family: 'Inconsolata', monospace;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    color: #7c7c7c;
+
+}

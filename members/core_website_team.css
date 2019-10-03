@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Roboto:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body{
+    background-color: #fff;
+    margin: 0;
+    padding:0;
+    color: red;
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+nav{
+    font-family: 'Montserrat' , sans-serif;
+  width: 100%;
+  position: fixed;
+  z-index: 100000;
+  transition: ease-in-out 0.3s;
+  padding-bottom: 12px;
+}
+nav.is-showing{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+nav ul{
+  padding-left: 45%;
+  padding-top: 1%;
+}
+nav li{
+
+  display: inline;
+  padding-left: 5%;
+}
+nav a {
+  position: relative;
+  font-weight: normal;
+  color: black;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all ease-in-out 0.24s;
+  border-radius: 3.4rem;
+}
+nav a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
+.core{
+  border: 2px solid #FF9800;
+  transition: ease-in-out 0.3s;
+}
+.core:hover{
+  background-color: #FF9800;
+  color: white;
+}
+nav.is-showing{
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+nav.is-showing a{
+  color: white;
+}
+nav.is-showing a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+img#logo{
+    margin-left: 10px;
+}
+
+#logo{
+    float: left;
+    padding-top:12px;
+    height: 50px;
+    margin: 0;
+}
+.heading{
+    font-family: 'Dosis', sans-serif;
+    
+    display: flex;
+    justify-content: center;
+}
+.tagline{
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    color: #7c7c7c;
+
+}
+
+.container{
+    width: 70%;
+    max-width: 1440px;
+    min-width: 375px;
+    height: 504px;
+    margin: auto;
+    background-color: transparent;
+    margin-top: 200px;
+   
+}
+
+
+.box{
+    float: left;
+    width: 45%;
+    height: auto;
+    padding-top: 45%;
+    
+}
+
+
+
+.less_margin_top{
+    margin-top:5%;
+}
+
+div.prez_img_jotsaroop{
+    background-image: url(img/jot_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1500px;
+    color: grey;
+}
+
+div.prez_img_jotsaroop.box.is-showing{
+   transform: translateY(0px);
+   opacity: 1;
+}
+div.prez_img_jotsaroop:hover{
+    background-image: url(img/jot_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1500px;
+    box-shadow: 2px 2px 20px 1px;
+    color: grey;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+div.prez_img_harshit{
+    background-image: url(img/harshit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1500px;
+    transition: 0.3s;
+    color: grey;
+}
+
+div.prez_img_harshit:hover{
+    background-image: url(img/harshit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1500px;
+    box-shadow: 2px 2px 10px 1px;
+    color: grey;
+    transition: 0.3s;
+    cursor: pointer; 
+}
+
+
+div.prez_description{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    float: right;
+    background-color: transparent;
+    padding-top: 17%;
+    padding-bottom: 17%;
+}
+
+@media screen and (max-width: 800px){
+    div.prez_image{
+        width: 100%;
+        height: auto;
+       
+    }
+
+    div.prez_description{
+        width: 100%;
+    }
+
+    .box{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+        height: auto;
+        padding-top: 80%;
+    
+    }
+
+     h2.post{     
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: orange;
+        text-align: center;
+        font-size: 3vw;
+        }
+
+
+
+}
+/*
+@media screen and (min-width: 425px ){
+    div.prez_img_jotsaroop{
+width: 425px;
+}
+}
+
+*/
+
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color: orange;
+    font-weight:100;
+    color: #545454;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+h2.post{     
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: orange;
+    text-align: center;
+    
+    }
+
+h2.apex_post{     
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 90;
+    font-size: 1.3rem;
+    padding-top: 1.3%;    
+    color: orange;
+    text-align: center;
+    }
+
+
+
+div.container_heads_1{
+    width: 100%;
+    height: 400px;
+    background-color: transparent;
+    float: left;
+    margin-top: 5%;
+}
+
+div.card1{
+    height: 100%;
+    width: 20%;
+    float: left;
+    margin-left: 10%;
+    background-color: transparent;
+}
+
+div.member_img{
+    width: 80%;
+    height: auto;
+    border-radius: 100%;
+    float: left;
+    padding-top: 80%;
+    color: grey;
+    margin: 0;
+    transition: 0.3s;
+}
+
+
+
+/* MEMBER IMAGES*/
+.Raghav{
+    background:url(img/raghav.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.vedansh{
+    background:url(img/vedansh.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tapish{
+    background:url(img/tapish.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.spandan{
+    background:url(img/spandan.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.yash{
+    background-image: url(img/yash.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.man{
+    background:url(img/man.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.Shaurya{
+    background:url(img/shaurya.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Angad{
+    background:url(img/angad.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Sidhya{
+    background:url(img/sidhya.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Navneet{
+    background-image: url(img/navneet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.khush{
+    background-image: url(img/khush.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.abhigya{
+    background-image: url(img/abhigya.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.card2{
+    height: 100%;
+    width: 20%;
+    float: left;
+    margin-left: 20%;
+    background-color: transparent;
+}
+
+div.member_text{
+    width: 80%;
+    height: 30%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.mem{
+    margin: -2%;
+}
+h1.small{
+    
+    margin-bottom: 4px;
+    font-size: 2rem;
+}
+
+
+
+@media screen and (max-width: 600px){
+
+    h1.scale_text{
+        font-size: 3vw;
+    }
+
+    h1.small{
+    
+    margin-bottom: 4px;
+    font-size: 30vw;
+    }
+
+    h2.post{     
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: orange;
+        text-align: center;
+        font-size: 3vw;
+        }
+
+    h2.apex_post{     
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: orange;
+        text-align: center;
+        font-size: 2vw;
+    }
+
+
+    div.container_heads_1{
+
+            height: auto;
+            text-align: center;
+            
+      }
+
+    div.card1{
+
+        width: 35%;
+        height: auto;
+        padding: 0%;
+        margin-left: 5%;
+        float: left;
+    }
+
+    div.card2{
+
+        width: 35%;
+        height: auto;
+        padding: 0%;
+        margin-left: 10%;
+        float: left;
+    }
+ .spandan{
+    margin-left: 60%;
+ }
+
+.Sidhya{
+    margin-left: 60%;
+ }
+
+ .single_spandan{
+    margin-left: 60%;
+    text-align: center;
+ }
+
+ .single_sidhya{
+    margin-left: 60%;
+    text-align: center;
+ }
+
+}
+
+.footer{
+    height: 100px;
+    width: 100%;
+    background-color: #0a478b;
+    float: left;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+@media screen and (max-width: 400px){
+    body{
+        width: 325px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
